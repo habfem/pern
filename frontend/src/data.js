@@ -71,6 +71,6 @@ export const popularProducts = [
   },
   {
     id: 8,
-    img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    img: "https://woollen-wear.in/cdn-cgi/imagedelivery/ZMUrshz-omHo_iJ4haWPew/women-jackets/below-zero-degree/em25982/em25982-black-f-220x280.JPG/public",
   },
 ]
