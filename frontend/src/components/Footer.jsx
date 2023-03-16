@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from "@material-ui/icons"
+import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -52,7 +52,13 @@ const Right = styled.div`
   flex: 1;
 `
 const ContactItem = styled.div`
-  
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+`
+
+const Payment = styled.img`
+  width: 50%;
 `
 
 const Footer = () => {
@@ -95,9 +101,10 @@ const Footer = () => {
       </Center>
       <Right>
         <Title>Contact</Title>
-        <ContactItem>622 Dixie Path, South Tobinchester 98336</ContactItem>
-        <ContactItem>+1 210 585 1270</ContactItem>
-        <ContactItem>contact@sell.dev</ContactItem>
+        <ContactItem><Room style={{ marginRight: "10px" }} /> 622 Dixie Path, South Tobinchester 98336</ContactItem>
+        <ContactItem><Phone style={{ marginRight: "10px" }} /> +1 210 585 1270</ContactItem>
+        <ContactItem><MailOutline style={{ marginRight: "10px" }} /> contact@sell.dev</ContactItem>
+        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
   )
