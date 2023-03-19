@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { mobile } from "../responsive"
+import { mobile, mobileXR, tablet } from "../responsive"
 
 const Container = styled.div`
   width: 100vw;
@@ -9,16 +9,19 @@ const Container = styled.div`
     rgba(255, 255, 255, 0.5)
   ),
   url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    center;
+   center;
   display: flex;
   align-items: center;
   justify-content: center;
+  cover: fit;
 `
 const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: rgba(255,255,255,0.5);
-  ${mobile({ width: "75%" })};
+  ${mobile({ width: "75%", height: "100%" })};
+  ${mobileXR({ width: "75%", height: "100%" })};
+  ${tablet({ width: "75%", height: "100%" })};
 `
 const Form = styled.form`
   display: flex;
@@ -45,6 +48,9 @@ const Button = styled.button`
   background: teal;
   color: white;
   cursor: pointer;
+  ${mobile({ width: "100%" })};
+  ${mobileXR({ width: "100%" })};
+  ${tablet({ width: "100%" })};
 `
 
 const Register = () => {

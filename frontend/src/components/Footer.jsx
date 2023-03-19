@@ -1,10 +1,12 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
-import { mobile } from "../responsive"
+import { mobile, mobileXR, tablet } from "../responsive"
 
 const Container = styled.div`
   display: flex;
   ${mobile({ flexDirection: "column" })};
+  ${mobileXR({ flexDirection: "column" })};
+  ${tablet({ flexDirection: "column" })};
 `
 const Left = styled.div`
   flex: 1;
@@ -36,6 +38,8 @@ const Center = styled.div`
   flex: 1;
   padding: 20px;
   ${mobile({ dsiplay: "none" })};
+  ${mobileXR({ dsiplay: "none" })};
+  ${tablet({ dsiplay: "none" })};
 `
 const Title = styled.h3`
   margin-bottom: 30px;
@@ -55,6 +59,8 @@ const Right = styled.div`
   flex: 1;
   padding: 20px;
   ${mobile({ backgroundColor: "#fff8f8" })};
+  ${mobileXR({ backgroundColor: "#fff8f8", height: "100%" })};
+  ${tablet({ backgroundColor: "#fff8f8", height: "100%" })};
 `
 const ContactItem = styled.div`
   margin-bottom: 20px;
