@@ -1,5 +1,21 @@
 {
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "e-commerce app",
+  "main": "index.js",
+  "type": "module",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2",
+    "nodemon": "^2.0.21",
+    "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0"
-  }
+  },
+  "scripts": {
+    "start": "node api/index",
+    "server": "nodemon api/index"
+  },
+  "author": "Habeeb Mustapha M. O.",
+  "license": "ISC"
 }
