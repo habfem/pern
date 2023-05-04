@@ -6,11 +6,16 @@ import authRoute from "./routes/auth.js"
 import productRoute from "./routes/product.js"
 import cartRoute from "./routes/cart.js"
 import orderRoute from "./routes/order.js"
+dotenv.config();
+import payRoute from "./routes/pay.js"
 
-const app = express();
+
+var app = express();
+
 app.use(express.json());
 
-dotenv.config();
+import cors from "cors"
+app.use(cors())
 
 connectDB();
 
@@ -23,6 +28,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
+app.use("/api/checkout", payRoute);
 
 const PORT = process.env.PORT || 5000;
 
