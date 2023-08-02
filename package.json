@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "e-commerce app",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "nodemon": "^2.0.21",
+    "paystack": "^2.0.1",
+    "react-router": "^6.9.0",
+    "react-router-dom": "^6.9.0",
+    "stripe": "^11.17.0"
+  },
+  "scripts": {
+    "start": "node api/index",
+    "server": "nodemon api/index"
+  },
+  "author": "Habeeb Mustapha M. O.",
+  "license": "ISC"
+}
